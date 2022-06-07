@@ -1,5 +1,8 @@
-10:55:15 **** Rebuild of configuration Debug for project tp_2 ****
+11:29:33 **** Clean-only build of configuration Debug for project tp_2 ****
+rm -rf src/ArrayPassenger.d src/funciones.o tp_2.exe src/funciones.d src/ArrayPassenger.o src/tp_2.d src/tp_2.o 
+11:29:34 **** Rebuild of configuration Debug for project tp_2 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp_2.o" "..\\src\\tp_2.c" 
-gcc -o tp_2.exe "src\\tp_2.o" 
-Info: Nothing to build for tp_2
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayPassenger.o" "..\\src\\ArrayPassenger.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o tp_2.exe "src\\ArrayPassenger.o" "src\\funciones.o" "src\\tp_2.o" 
