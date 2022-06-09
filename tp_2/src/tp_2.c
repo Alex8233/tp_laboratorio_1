@@ -57,7 +57,7 @@ int main(void)
 				printf("\nIngrese el id que desea modificar:");
 				fflush(stdin);
 				scanf("%d", &buscarId);
-				while(!(buscarId >= 0))
+				while(!(buscarId >= 0 && buscarId <=20000))
 				{
 					printf("\nERROR!!!,Ingrese el id que desea modificar:");
 					fflush(stdin);

@@ -26,6 +26,7 @@ void minusculas(char* array, int tam)
 
 void opciones(int* opciones)
 {
+	*opciones =0;
 	printf("\nMenu principal: \n"
 			"1- ALTA de pasajero.\n"
 			"2- MODIFICAR pasajero.\n"
@@ -98,7 +99,7 @@ void nombreYCodigo(char* array,int tamanio,char* mensaje,char* mensajeError)
 		{
 			if(isdigit(array[i]) !=0)
 			{
-				printf("%d",isdigit(array[i]));
+
 				while(isdigit(array[i]) !=0)
 				{
 					printf("%s",mensajeError);
@@ -131,18 +132,58 @@ void numeroInt(int* numero,char* mensaje, char* mensajeError,int minimo,int maxi
 }
 void precios(float* numero,char* mensaje,char* mensajeError)
 {
+	char array[20];
+	int chequear;
 	printf("%s",mensaje);
 	fflush(stdin);
-	scanf("%f",numero);
-	while(!(*numero>0 && *numero < 999999999))
+	gets(array);
+	chequear =chequearNumero(array,20);
+	while(chequear !=0 || strlen(array)> 20)
 	{
 		printf("%s",mensajeError);
 		fflush(stdin);
-		scanf("%f",numero);
+		gets(array);
+		chequear =chequearNumero(array,20);
 	}
+	*numero = atof(array);
+	while(*numero < 0)
+	{
+		printf(mensajeError);
+		fflush(stdin);
+		gets(array);
+		chequear =chequearNumero(array,20);
+		while(chequear !=0 || strlen(array)> 20)
+		{
+			printf(mensajeError);
+			fflush(stdin);
+			gets(array);
+			chequear =chequearNumero(array,20);
+		}
+		*numero=atof(array);
+	}
+}
+int chequearNumero(char* array,int tam)
+{
+	int resultado=-1;
+
+		if(array!=NULL)
+		{
+			for(int i=0;i< strlen(array);i++)
+			{
+
+				resultado = isalpha(array[i]);
+
+				if(resultado!=0)
+				{
+					break;
+				}
+			}
+		}
+		return resultado;
 }
 void op2(int* opcion)
 {
+	*opcion =0;
 	printf("\nMenu de modificaciones de datos del pasajero:\n"
 		"1- Nombre.\n"
 		"2- Apellido.\n"

@@ -20,6 +20,7 @@ int  initPassengers(ePassenger* pasajeros,int tam)
 		for(int i = 0; i< tam;i++)
 		{
 			pasajeros[i].isEmpty = -1;
+			pasajeros[i].id=-1;
 			retorno =0;
 		}
 	}
@@ -67,7 +68,7 @@ int removePassenger(int baja,ePassenger* pasajeros,int tam)
 }
 int findPassengerById(int id,ePassenger* pasajeros,int tam)
 {
-	int retorno =-1;
+	int retorno = -1;
 	if(pasajeros != NULL && tam >0)
 	{
 		for(int i=0;i<tam;i++)
