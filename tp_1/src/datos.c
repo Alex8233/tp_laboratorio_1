@@ -51,9 +51,9 @@ int pedirUno(int km)
 {
 	printf("\nIngrese cantidad de km: ");
 	scanf("%d",&km);
-	while(!(km >= 0))
+	while(km <=0)
 	{
-		printf("\nERROR, INGRESE LA CANTIDAD DE KM");
+		printf("\nERROR, INGRESE LA CANTIDAD DE KM : ");
 		scanf("%d",&km);
 	}
 
@@ -104,12 +104,12 @@ int funcionDos(float latam,float aerolineas,int km,float debitoLatam1,float cred
 			"\n\nPrecio Aerolineas: $ %.2f"
 			"\na) Precio con tarjeta de debito: $ %.2f"
 			"\nb) Precio con tarjeta de credito: $ %.2f"
-			"\nc) Precio pagando con bitcoin: $ %.2f"
+			"\nc) Precio pagando con bitcoin: $ %f"
 			"\nd) Mostrar precio unitario: $ %.2f"
 			"\n\nPrecio Latam: $ %.2f"
 			"\na) Precio con tarjeta de debito: $ %.2f"
 			"\nb) Precio con tarjeta de credito: $ %.2f"
-			"\nc) Precio pagando con bitcoin: $ %.2f"
+			"\nc) Precio pagando con bitcoin: $ %.f"
 			"\nd) Mostrar precio unitario: $ %.2f"
 			"\n\n Diferencia: %.2f",km, aerolineas, debitoAerolineas2, creditoAerolineas2, bitcoinAerolineas2, precioUnitarioAerolineas2, latam, debitoLatam1, creditoLatam1, bitcoinLatam1, precioUnitarioLatam1, diferencia2);
 	return 0;

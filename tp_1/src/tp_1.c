@@ -52,6 +52,7 @@ int main(void) {
 	float bitcoinLatam1;
 	float precioUnitarioLatam1;
 
+
 	float aerolineas = 0;
 	float creditoAerolineas2;
 	float debitoAerolineas2;
@@ -62,19 +63,25 @@ int main(void) {
 	int flag = 0;
 	int flagDos = 0;
 	int flagTres = 0;
+
 do{
 		opcion = opciones(opcion,&flagDos,&flagTres,&flag,latam,aerolineas,km);
 	switch(opcion)
 	{
 	case 1:
+		if(latam ==0 && aerolineas ==0)
 		flagDos = 1;
+
 		km = pedirUno(km);
+		if(latam > 0 && aerolineas > 0 )
+			flagTres =1;
 		break;
 	case 2:
 		flagDos = 0;
 		flagTres = 1;
 		latam = pedirDos(latam);
 		aerolineas = pedirTres(aerolineas);
+
 		break;
 	case 3:
 		if(latam == 0 || aerolineas == 0 || km == 0)

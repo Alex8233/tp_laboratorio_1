@@ -1,8 +1,86 @@
-11:29:33 **** Clean-only build of configuration Debug for project tp_2 ****
+13:58:29 **** Clean-only build of configuration Debug for project tp_2 ****
 rm -rf src/ArrayPassenger.d src/funciones.o tp_2.exe src/funciones.d src/ArrayPassenger.o src/tp_2.d src/tp_2.o 
-11:29:34 **** Rebuild of configuration Debug for project tp_2 ****
+13:58:29 **** Rebuild of configuration Debug for project tp_2 ****
 Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp_2.o" "..\\src\\tp_2.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayPassenger.o" "..\\src\\ArrayPassenger.c" 
+gcc -o tp_2.exe "src\\ArrayPassenger.o" "src\\funciones.o" "src\\tp_2.o" 
+11:22:06 **** Rebuild of configuration Debug for project tp_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp_1.o" "..\\src\\tp_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\datos.o" "..\\src\\datos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcione.o" "..\\src\\funcione.c" 
+gcc -o tp_1.exe "src\\datos.o" "src\\funcione.o" "src\\tp_1.o" 
+17:29:28 **** Rebuild of configuration Debug for project tp_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp_2.o" "..\\src\\tp_2.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayPassenger.o" "..\\src\\ArrayPassenger.c" 
+gcc -o tp_2.exe "src\\ArrayPassenger.o" "src\\funciones.o" "src\\tp_2.o" 
+Info: Nothing to build for tp_2
+19:12:31 **** Rebuild of configuration Debug for project tp_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\datos.o" "..\\src\\datos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funcione.o" "..\\src\\funcione.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp_1.o" "..\\src\\tp_1.c" 
+..\src\tp_1.c: In function 'main':
+..\src\tp_1.c:66:6: warning: unused variable 'flagCuatro' [-Wunused-variable]
+   66 |  int flagCuatro=0;
+      |      ^~~~~~~~~~
+gcc -o tp_1.exe "src\\datos.o" "src\\funcione.o" "src\\tp_1.o" 
+20:24:16 **** Incremental Build of configuration Debug for project tp_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\datos.o" "..\\src\\datos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp_1.o" "..\\src\\tp_1.c" 
+..\src\tp_1.c: In function 'main':
+..\src\tp_1.c:68:73: error: expected expression before ')' token
+   68 |   opcion = opciones(opcion,&flagDos,&flagTres,&flag,latam,aerolineas,km,);
+      |                                                                         ^
+..\src\tp_1.c:68:12: error: too many arguments to function 'opciones'
+   68 |   opcion = opciones(opcion,&flagDos,&flagTres,&flag,latam,aerolineas,km,);
+      |            ^~~~~~~~
+In file included from ..\src\tp_1.c:43:
+..\src\datos.h:44:5: note: declared here
+   44 | int opciones(int opcion, int* flagDos, int* flagTres, int* flag, float latam, float aerolineas, int km);
+      |     ^~~~~~~~
+20:25:59 **** Incremental Build of configuration Debug for project tp_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp_1.o" "..\\src\\tp_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\datos.o" "..\\src\\datos.c" 
+gcc -o tp_1.exe "src\\datos.o" "src\\funcione.o" "src\\tp_1.o" 
+20:28:54 **** Incremental Build of configuration Debug for project tp_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\datos.o" "..\\src\\datos.c" 
+gcc -o tp_1.exe "src\\datos.o" "src\\funcione.o" "src\\tp_1.o" 
+Info: Nothing to build for tp_1
+20:50:37 **** Incremental Build of configuration Debug for project tp_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\datos.o" "..\\src\\datos.c" 
+gcc -o tp_1.exe "src\\datos.o" "src\\funcione.o" "src\\tp_1.o" 
+20:51:16 **** Incremental Build of configuration Debug for project tp_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\datos.o" "..\\src\\datos.c" 
+gcc -o tp_1.exe "src\\datos.o" "src\\funcione.o" "src\\tp_1.o" 
+20:51:50 **** Incremental Build of configuration Debug for project tp_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\datos.o" "..\\src\\datos.c" 
+gcc -o tp_1.exe "src\\datos.o" "src\\funcione.o" "src\\tp_1.o" 
+Info: Nothing to build for tp_2
+Info: Nothing to build for tp_2
+22:31:52 **** Incremental Build of configuration Debug for project tp_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp_2.o" "..\\src\\tp_2.c" 
+gcc -o tp_2.exe "src\\ArrayPassenger.o" "src\\funciones.o" "src\\tp_2.o" 
+22:50:24 **** Incremental Build of configuration Debug for project tp_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp_2.o" "..\\src\\tp_2.c" 
+gcc -o tp_2.exe "src\\ArrayPassenger.o" "src\\funciones.o" "src\\tp_2.o" 
+22:52:08 **** Incremental Build of configuration Debug for project tp_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp_2.o" "..\\src\\tp_2.c" 
+gcc -o tp_2.exe "src\\ArrayPassenger.o" "src\\funciones.o" "src\\tp_2.o" 
+22:55:48 **** Incremental Build of configuration Debug for project tp_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp_2.o" "..\\src\\tp_2.c" 
 gcc -o tp_2.exe "src\\ArrayPassenger.o" "src\\funciones.o" "src\\tp_2.o" 

@@ -19,7 +19,7 @@ int main(void)
 {
 	setbuf(stdout,NULL);
 	int opcion;
-	int id =0;
+	int id =1;
 	int ingresos = 0;
 	int buscarId;
 	int opciones2;
@@ -47,13 +47,18 @@ int main(void)
 			{
 				id++;
 				ingresos++;
-
 			}
 
 			break;
 		case 2:
 			if(ingresos > 0)
 			{
+				printf("id Ingresados\t\tNombre\n");
+				for(int i =0;i < TAMPASAJEROS; i++)
+				{
+					if(pasajeros[i].isEmpty == 0)
+					printf("%-24d%s\n",pasajeros[i].id,pasajeros[i].name);
+				}
 				printf("\nIngrese el id que desea modificar:");
 				fflush(stdin);
 				scanf("%d", &buscarId);
@@ -110,6 +115,12 @@ int main(void)
 		case 3:
 			if(ingresos > 0)
 			{
+				printf("id Ingresados\t\tNombre\n");
+				for(int i =0;i < TAMPASAJEROS; i++)
+				{
+					if(pasajeros[i].isEmpty == 0)
+					printf("%-24d%s\n",pasajeros[i].id,pasajeros[i].name);
+				}
 				printf("\nIngrese el id que desea modificar:");
 				fflush(stdin);
 				scanf("%d", &buscarId);
